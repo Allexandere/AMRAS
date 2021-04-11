@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="main-config-server" />
+        <module name="omdb-api-service" />
+        <module name="main-client-service" />
+        <module name="main-eureka-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="main-client-service" target="1.8" />
+      <module name="main-config-server" target="1.8" />
+      <module name="main-eureka-server" target="1.8" />
+      <module name="omdb-api-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="main-client-service" options="-parameters" />
+      <module name="main-config-server" options="-parameters" />
+      <module name="main-eureka-server" options="-parameters" />
+      <module name="omdb-api-service" options="-parameters" />
+    </option>
+  </component>
+</project>

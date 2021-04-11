@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>A.M.R.A.S.</title>
+</head>
+<style>
+    .movie_content {
+        margin-top: 100px;
+        font-size: 22px;
+    }
+</style>
+<body bgcolor="#B5BCF0">
+<div class="movie_content" align="center">
+    <form method="post" th:action="@{/}" th:object="${movieRequest}">
+        <div>
+            <label>Search movie</label>
+        </div>
+        <div>
+            <input th:field="*{searchKeyword}" type="search" placeholder="Search keyword..." autofocus required/>
+            <input type="number" th:field="*{year}" placeholder="Year"/>
+            <button type="submit">Find</button>
+        </div>
+    </form>
+</div>
+
+<div class="movie_content" th:if="${movieInfo != null  && movieInfo.response != 'False'}" align="center">
+    <div>
+        <img th:src="${movieInfo.poster}" alt="poster" width="112.5" height="150"><br>
+        <label th:text="${movieInfo.title}"/><br>
+        <label th:text="${movieInfo.year}"/><br>
+        <label th:text="${movieInfo.plot}"/><br>
+    </div>
+    <div>
+        <table>
+            <thead>
+            <span th:each="rating: ${movieInfo.ratings}">
+                    <th th:text="${rating.source}"></th>
+                </span>
+            <th>Average rating</th>
+            </thead>
+            <tbody>
+            <span th:each="rating : ${movieInfo.ratings}" class="active-row">
+                    <td th:text="${rating.value}"></td>
+                </span>
+            <td th:text="${movieInfo.getAverageRating()}"></td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="movie-content" th:if="${movieInfo != null  && movieInfo.response == 'False'}" align="center">
+    <h2>Movie not found</h2>
+</div>
+</body>
+</html>

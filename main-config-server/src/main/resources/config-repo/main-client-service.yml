@@ -1,0 +1,4 @@
+services:
+  omdb:
+    api:
+      url: http://omdb-api-service/
