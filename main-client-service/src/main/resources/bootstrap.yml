@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: main-client-service
+  cloud:
+    config:
+      uri: http://main-config-server:8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://main-eureka-server:8761/eureka

@@ -1,5 +1,6 @@
 FROM openjdk:8-alpine
-WORKDIR /workdir
+WORKDIR workdir/app
+RUN apk update && apk add bash
 COPY target/*.jar app.jar
-EXPOSE 8085
-ENTRYPOINT ["java","-jar","app.jar"]
+COPY ./wait-for-it.sh .
+CMD java -jar app.jar

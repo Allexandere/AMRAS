@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: main-eureka-server
+  cloud:
+    config:
+      uri: http://main-config-server:8888
