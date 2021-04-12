@@ -4,7 +4,7 @@ In active development
 
 **What is it for?**<br />
   
-  Its my learning and portfolio based where I learn how to implement microservice architecture using Spring. 
+  Its my learning and portfolio project where I learn how to implement microservice architecture using Spring. 
   I want to make a web app based on microservice architecture where you can find a movie and its brief information.
 
 **How to run this thing?**<br />
