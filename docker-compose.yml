@@ -37,7 +37,7 @@ services:
       - 8085:8085
     networks:
       - main-network
-    command: [ "./wait-for-it.sh", "--timeout=100", "main-eureka-server:8761", "--", "java",  "-jar", "app.jar" ]
+    command: [ "./wait-for-it.sh", "--timeout=100", "omdb-api-service:8086", "--", "java",  "-jar", "app.jar" ]
 
   main-client-service:
     build:

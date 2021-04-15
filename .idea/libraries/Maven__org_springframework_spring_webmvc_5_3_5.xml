@@ -3,9 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5-sources.jar!/" />
     </SOURCES>

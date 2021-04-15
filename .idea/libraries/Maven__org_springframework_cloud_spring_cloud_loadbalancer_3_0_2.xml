@@ -3,9 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-loadbalancer/3.0.2/spring-cloud-loadbalancer-3.0.2.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-loadbalancer/3.0.2/spring-cloud-loadbalancer-3.0.2-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-loadbalancer/3.0.2/spring-cloud-loadbalancer-3.0.2-sources.jar!/" />
     </SOURCES>
