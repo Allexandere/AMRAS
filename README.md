@@ -27,6 +27,8 @@ In active development
   
   ![alt text](https://github.com/Allexandere/AMRAS/blob/main/movie1.jpg?raw=true)
   ![alt text](https://github.com/Allexandere/AMRAS/blob/main/movie2.jpg?raw=true)
+  ![alt text](https://github.com/Allexandere/AMRAS/blob/main/movie4.jpg?raw=true)
+  ![alt text](https://github.com/Allexandere/AMRAS/blob/main/movie3.jpg?raw=true)
   
   Map of project
   
