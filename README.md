@@ -20,9 +20,16 @@ In active development
  
   `http://localhost:8084/`<br />
   Main page <br />
+  
   ![alt text](https://github.com/Allexandere/AMRAS/blob/main/main-page.jpg?raw=true)
   
   Some movies
+  
   ![alt text](https://github.com/Allexandere/AMRAS/blob/main/movie1.jpg?raw=true)
   ![alt text](https://github.com/Allexandere/AMRAS/blob/main/movie2.jpg?raw=true)
+  
+  Map of project
+  
+  ![alt text](https://github.com/Allexandere/AMRAS/blob/main/map.jpg?raw=true)
+  
   
