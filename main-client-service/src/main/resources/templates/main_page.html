@@ -24,32 +24,38 @@
     </form>
 </div>
 
-<div class="movie_content" th:if="${movieInfo != null  && movieInfo.response != 'False'}" align="center">
-    <div>
-        <img th:src="${movieInfo.poster}" alt="poster" width="112.5" height="150"><br>
-        <label th:text="${movieInfo.title}"/><br>
-        <label th:text="${movieInfo.year}"/><br>
-        <label th:text="${movieInfo.plot}"/><br>
-    </div>
-    <div>
-        <table>
-            <thead>
-            <span th:each="rating: ${movieInfo.ratings}">
+<div class="movie_content" th:if="${moviesInfo != null  && moviesInfo.getTotal_results() != 0}" align="center">
+    <tr th:each="info : ${moviesInfo.getResults()}">
+        <form id="movie_form" method="get" th:action="'/' + ${info.getId()}">
+            <div>
+                <img style="cursor: pointer" th:src="${info.getPoster_path()}" alt="poster" width="112.5"
+                     height="150" onclick="this.closest('form').submit()"><br>
+                <label style="cursor: pointer" th:text="${info.getTitle()}" onclick="this.closest('form').submit()"></label><br>
+                <label th:text="${info.getRelease_date().substring(0,4)}"></label><br>
+                <label th:text="${info.getOverview()}"></label><br>
+            </div>
+        </form>
+    </tr>
+</div>
+<!--
+<div>
+    <table>
+        <thead>
+        <span th:each="rating: ${movieInfo.ratings}">
                     <th th:text="${rating.source}"></th>
                 </span>
-            <th>Average rating</th>
-            </thead>
-            <tbody>
-            <span th:each="rating : ${movieInfo.ratings}" class="active-row">
+        <th>Average rating</th>
+        </thead>
+        <tbody>
+        <span th:each="rating : ${movieInfo.ratings}" class="active-row">
                     <td th:text="${rating.value}"></td>
                 </span>
-            <td th:text="${movieInfo.getAverageRating()}"></td>
-            </tbody>
-        </table>
-    </div>
+        <td th:text="${movieInfo.getAverageRating()}"></td>
+        </tbody>
+    </table>
 </div>
-
-<div class="movie-content" th:if="${movieInfo != null  && movieInfo.response == 'False'}" align="center">
+-->
+<div class="movie-content" th:if="${moviesInfo != null  && moviesInfo.total_results == 0}" align="center">
     <h2>Movie not found</h2>
 </div>
 </body>

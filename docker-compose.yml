@@ -17,17 +17,27 @@ services:
       - 8761:8761
     networks:
       - main-network
-    command: [ "./wait-for-it.sh", "--timeout=20" , "main-config-server:8888", "--", "java",  "-jar", "app.jar" ]
+    command: [ "./wait-for-it.sh", "--timeout=100" , "main-config-server:8888", "--", "java",  "-jar", "app.jar" ]
 
   omdb-api-service:
     build:
       context: .
       dockerfile: ./omdb-api-service/Dockerfile
     ports:
+      - 8086:8086
+    networks:
+      - main-network
+    command: [ "./wait-for-it.sh", "--timeout=100", "main-eureka-server:8761", "--", "java",  "-jar", "app.jar" ]
+
+  moviedb-api-service:
+    build:
+      context: .
+      dockerfile: ./moviedb-api-service/Dockerfile
+    ports:
       - 8085:8085
     networks:
       - main-network
-    command: [ "./wait-for-it.sh", "--timeout=60", "main-eureka-server:8761", "--", "java",  "-jar", "app.jar" ]
+    command: [ "./wait-for-it.sh", "--timeout=100", "omdb-api-service:8086", "--", "java",  "-jar", "app.jar" ]
 
   main-client-service:
     build:
@@ -37,7 +47,7 @@ services:
       - 8084:8084
     networks:
       - main-network
-    command: [ "./wait-for-it.sh", "--timeout=60", "omdb-api-service:8085", "--", "java",  "-jar", "app.jar" ]
+    command: [ "./wait-for-it.sh", "--timeout=100", "moviedb-api-service:8085", "--", "java",  "-jar", "app.jar" ]
 
 networks:
   main-network:

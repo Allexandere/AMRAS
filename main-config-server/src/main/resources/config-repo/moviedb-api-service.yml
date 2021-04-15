@@ -1,0 +1,9 @@
+moviedb:
+  api:
+    url:
+      v3: https://api.themoviedb.org/3
+      v4: https://api.themoviedb.org/4
+
+    api_key: b12d34105fd4f508562c8e094e976d88
+server:
+  port: 8085

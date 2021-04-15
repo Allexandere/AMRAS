@@ -1,6 +1,6 @@
 omdb:
   api:
-    url: http://www.omdbapi.com/
+    url: http://www.omdbapi.com
     apikey: 7f3f5653
 server:
-  port: 8085
+  port: 8086

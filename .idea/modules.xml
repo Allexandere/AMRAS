@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/main-client-service/main-client-service.iml" filepath="$PROJECT_DIR$/main-client-service/main-client-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-config-server/main-config-server.iml" filepath="$PROJECT_DIR$/main-config-server/main-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-eureka-server/main-eureka-server.iml" filepath="$PROJECT_DIR$/main-eureka-server/main-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moviedb-api-service/moviedb-api-service.iml" filepath="$PROJECT_DIR$/moviedb-api-service/moviedb-api-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/omdb-api-service/omdb-api-service.iml" filepath="$PROJECT_DIR$/omdb-api-service/omdb-api-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moviedb-api-service/omdb-api-service (1).iml" filepath="$PROJECT_DIR$/moviedb-api-service/omdb-api-service (1).iml" />
     </modules>
   </component>
 </project>

@@ -1,13 +1,13 @@
-package io.amras.mainclientserver;
+package io.amras.omdbapiservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MainClientServerApplication {
+public class MoviedbApiServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MainClientServerApplication.class, args);
+		SpringApplication.run(MoviedbApiServiceApplication.class, args);
 	}
 
 }

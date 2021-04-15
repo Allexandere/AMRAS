@@ -17,6 +17,7 @@
         <module>main-client-service</module>
         <module>main-eureka-server</module>
         <module>omdb-api-service</module>
+        <module>moviedb-api-service</module>
     </modules>
 
 

@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/omdb-api-service/pom.xml" />
         <option value="$PROJECT_DIR$/main-client-server/pom.xml" />
         <option value="$PROJECT_DIR$/main-client-service/pom.xml" />
+        <option value="$PROJECT_DIR$/moviedb-api-service1/pom.xml" />
+        <option value="$PROJECT_DIR$/moviedb-api-service/pom.xml" />
       </list>
     </option>
   </component>

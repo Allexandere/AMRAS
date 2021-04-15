@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>A.M.R.A.S.</title>
+</head>
+<style>
+    .movie_content {
+        margin-top: 100px;
+        font-size: 22px;
+    }
+</style>
+<body bgcolor="#B5BCF0">
+<div class="movie_content" th:if="${movieInfo != null  && movieInfo.getResponse() != 'False'}" align="center">
+    <div>
+        <img th:src="${movieInfo.getPoster()}" alt="poster" width="112.5" height="150"><br>
+        <label th:text="${movieInfo.getTitle()}"/><br>
+        <label th:text="${movieInfo.getYear()}"/><br>
+        <label th:text="${movieInfo.getPlot()}"/><br>
+    </div>
+    <div>
+        <table>
+            <thead>
+            <span th:each="rating: ${movieInfo.getRatings()}">
+                    <th th:text="${rating.getSource()}"></th>
+                </span>
+            <th>Average rating</th>
+            </thead>
+            <tbody>
+            <span th:each="rating : ${movieInfo.getRatings()}" class="active-row">
+                    <td th:text="${rating.getValue()}"></td>
+                </span>
+            <td th:text="${movieInfo.getAverageRating()}"></td>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

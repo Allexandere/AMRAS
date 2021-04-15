@@ -1,6 +1,9 @@
 services:
   omdb:
     api:
-      url: http://omdb-api-service/
+      url: http://omdb-api-service
+  moviedb:
+    api:
+      url: http://moviedb-api-service
 server:
   port: 8084

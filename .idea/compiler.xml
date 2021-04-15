@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="omdb-api-service (1)" />
         <module name="main-config-server" />
         <module name="omdb-api-service" />
         <module name="main-client-service" />
+        <module name="moviedb-api-service" />
         <module name="main-eureka-server" />
       </profile>
     </annotationProcessing>
@@ -17,7 +19,9 @@
       <module name="main-client-service" target="1.8" />
       <module name="main-config-server" target="1.8" />
       <module name="main-eureka-server" target="1.8" />
+      <module name="moviedb-api-service" target="1.8" />
       <module name="omdb-api-service" target="1.8" />
+      <module name="omdb-api-service (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,7 +29,9 @@
       <module name="main-client-service" options="-parameters" />
       <module name="main-config-server" options="-parameters" />
       <module name="main-eureka-server" options="-parameters" />
+      <module name="moviedb-api-service" options="-parameters" />
       <module name="omdb-api-service" options="-parameters" />
+      <module name="omdb-api-service (1)" options="-parameters" />
     </option>
   </component>
 </project>
