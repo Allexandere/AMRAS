@@ -1,3 +1,7 @@
+**Currently, users from Moscow and etc. can have problems with accessing the moviedb api.
+  It means that my app won't work for them. I've already contacted support team, so please be tuned.**
+
+
 Average Movie Rating Agregation Service
 
 In active development
