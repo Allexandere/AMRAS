@@ -20,6 +20,8 @@ In active development
   mvn clean package -DskipTests
   docker-compose up
   ```
+  If during running occured error 127 - delete wait-for-it.sh and download it without using git (like zip archive or etc.)
+ 
  **Endpoints:**<br />
  
   `http://localhost:8084/`<br />
